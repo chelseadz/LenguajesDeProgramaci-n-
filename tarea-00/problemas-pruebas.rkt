@@ -6,7 +6,7 @@
 
 (define-test-suite pruebas
   (test-case "area-circle"
-    (check-eqv? (area-circle 5) 78.5)))
+    (check-eqv? (area-circle 5) 78.5))
   
   (test-case "circle-properties"
     (check-within (circle-properties 5) '(78.5 31.4) 0.001))
@@ -30,6 +30,6 @@
     (check-equal? (map even? '(-1)) '(#f))
   
   (test-case "another-add"
-    (check-eqv? (another-add 10 5) 15))
+    (check-eqv? (another-add 10 5) 15)))
 
 (run-tests pruebas 'verbose)
