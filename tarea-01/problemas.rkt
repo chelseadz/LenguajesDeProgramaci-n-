@@ -185,5 +185,7 @@
            (cons (p fs) ls*))
            '() ls))
 
+(define (quine ns)
+  ns)
 
 (provide (all-defined-out))
