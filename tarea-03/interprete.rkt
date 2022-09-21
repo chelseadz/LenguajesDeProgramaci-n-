@@ -88,7 +88,7 @@
 (define (unbound-identifier-error [name : Symbol])
   (error 'interp
          (string-append
-          "unbound identifier: "
+          "identificador no está enlazado"
           (to-string name))))
 
 
